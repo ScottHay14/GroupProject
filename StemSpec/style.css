@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+    background-color: #fff6f1;
+    margin: 0;
+	overflow-x: hidden;
+        overflow-y: hidden;
+}
+
+.nav {
+    position: absolute; 
+    top: 20px;  
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Style for links */
+.nav a {
+    font-family: 'Poppins';
+    text-decoration: none; 
+    color: black;
+    font-size: 24px;
+    margin: 0 15px; 
+  
+}
+
+/* Style for horizontal line */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+}
+
+/* Inline HRs */
+.inlineHr {
+    display: inline-block;
+    border-top: 1px solid black;
+    width: 49%;
+    margin-top: 60px;
+}
+
+.hr1 {
+    width: 9%; 
+    margin-right: 12%;
+}
+
+.hr2 {
+    position: absolute;
+    width: 78.5%; 
+    position: relative;
+}
+
+.inlineHr1 {
+    border-top: 1px solid black;
+    margin-top: 60px;
+}
+
+.hr3 {
+    display: block; 
+    width: 400px; 
+    margin-left: 9%; 
+    position: relative; 
+    margin-top: 200px;
+}
+.askAI-text {
+	font-family: 'Poppins';
+	position: absolute;
+    top: 170px; 
+    left: 12%;
+    transform: translateX(-50%);
+	font-size: 24px;
+}
+
+/* Main Content Layout */
+.main-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.intro {
+  background-color: #fff6f1; 
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 150px;
+
+ 
+}
+
+.intro h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  width: 500px;
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+
+.intro p {
+  font-size: 20px;
+  font-family: 'Poppins';
+  font-weight: normal;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 550px;
+ 
+}
+
+.intro ul li {
+  font-size: 20px;	
+  font-family: 'Poppins';
+  list-style: disc;
+  margin-bottom: 5px;
+  font-weight: bold; 
+}
+
+#verticle-line1 {
+    position: absolute; 
+    top: 685px; 
+    left: 936px; 
+    height: 254px;
+    width: 15px;
+    background-color: #fc8cd0;
+	filter: opacity(0.5);
+    border-radius: 150px;
+	mix-blend-mode: multiply;
+}
+#verticle-line2 {
+    position: absolute; 
+    top: 510px;
+    left: 936px; 
+    height: 204px;
+    width: 15px;
+    background-color: #fddf59;
+	filter: opacity(0.5);
+    border-radius: 150px; 
+	mix-blend-mode: multiply;
+}
+#verticle-line3 {
+    position: absolute; 
+    top: 325px;
+    left: 936px; 
+    height: 224px;
+    width: 15px; 
+    background-color: #5ce1e6;
+	filter: opacity(0.5);
+    border-radius: 150px;
+	mix-blend-mode: multiply;
+}
+
+
+/* Job Search Section */
+.job-search {
+  background-color: #fff6f1;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; 
+  margin-left: -105px; 
+  margin-top: -7px;
+}
+
+/* Job Search input and buttons */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 0; 
+  border: none; 
+  border-bottom: 2px solid #5ce1e6; 
+  background-color: transparent; 
+  color: black; 
+  font-size: 16px; 
+  outline: none; 
+  position: relative;
+  top: -150px;  
+  left: -12px; 
+}
+
+/* Filters container adjustment */
+.filters {
+  display: flex; 
+  gap: 10px; 
+  flex-wrap: nowrap;
+  align-items: center; 
+  
+}
+
+/* Filters select styling */
+.filters select {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #d5e59f; 
+  background-color: transparent;
+  position: relative;
+  left: -215px; 
+  top: -75px;
+  margin-right: 20px; 
+  text-align-last: left;
+  direction: rtl;
+  padding: 0 8px;
+  font-size: 16px;
+  font-family: 'Poppins';
+  white-space: nowrap; 
+}
+
+/* Button styling */
+.find-jobs-btn {
+  background-color: #fddf59;
+  border: 2px solid #5ce1e6;
+  padding: 10px 40px;  
+  cursor: pointer;
+  width: auto;  
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins';
+  display: inline-block; 
+  margin-left: auto;  
+  margin-right: auto; 
+  position: relative;
+  text-align: center;
+  
+  top: -150px; 
+  left: -290px;
+}
+
+/* Job Listing container with scroll functionality */
+.job-listing {
+    max-height: 500px; 
+    overflow-y: auto;  
+    padding-right: 10px;  
+    margin-top: -35px;  
+}
+
+/* Job cards styling */
+.job-card {
+    font-family: 'Poppins';
+    background-color: #ffffff;
+    padding: 15px; 
+    border: 3px solid #5ce1e6;  
+    border-radius: 8px;  
+    margin-bottom: 20px;  
+    margin-left: 28px;  
+    margin-right: 25px; 
+}
+
+/* Styling for job details inside each card */
+.job-details {
+    margin-bottom: 15px; 
+}
+
+.job-card h3 {
+  font-size: 24px;
+  margin: 5px 0;
+  margin-top: 0; 
+}
+
+.job-card p {
+  margin: 5px 0; 
+  font-size: 16px; 
+}
+
+.job-card .see-more {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px; 
+}
+
+.job-card .see-more:hover {
+  text-decoration: underline;
+}
+
+/* Logo styling */
+#logo {
+    position: absolute;
+    top: -63px; 
+    left: 15.1%;
+    transform: translateX(-50%);
+    width: 260px;
+    height: auto;
+}
+
+#banner {
+    position: absolute;
+    top: -143px; 
+    left: 85%;
+    transform: translateX(-50%);
+    width: 976px;
+    height: 203px;
+}
+
+#askAI {
+    position: absolute;
+    top: 105px; 
+    left: 23%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+}
+#manWithBoard {
+    position: absolute;
+    top: 365px; 
+    left: 96%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+}
+
+#backgroundDetails {
+    position: absolute;
+    top: 20.5%; 
+    left: 52%;
+    transform: translateX(-50%);
+    width: 1701px;
+    height: 750px;
+    pointer-events: none; 
+}
+
+.askAI-text {
+    font-family: 'Poppins';
+    position: absolute;
+    top: 170px; 
+    left: 12%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    cursor: pointer; 
+    color: black; 
+}
+
+
+/* Container for the entire chat */
+#chat-container {
+	font-size: 16px;
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+	margin-left: -13px; 
+}
+
+/* Each chat message style */
+.chat-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 70%;
+    font-family: 'Poppins';
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+/* User Messages (Yellow Box, Right aligned) */
+.user-message {
+    align-self: flex-end; 
+    background-color: #fddf59; 
+    color: #333;
+    text-align: right;
+    border-radius: 20px;
+    padding: 12px 20px;
+}
+
+/* AI Messages (Blue Box, Left aligned) */
+.ai-message {
+    align-self: flex-start; 
+    background-color: #5ce1e6; /* Blue background */
+    color: #333;
+    text-align: left;
+    border-radius: 20px;
+    padding: 12px 20px;
+    max-width: 70%; 
+    margin-left: 0px; 
+}
+
+/* Style the input field */
+#ai-user-input {
+    border: none; 
+    outline: none; 
+    padding: 10px 15px;
+    font-family: 'Poppins'; 
+    font-size: 16px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    width: 100%; 
+}
+
+#ai-submit-button {
+    background-color: #5ce1e6; 
+    border: none; 
+    padding: 10px;  
+    border-radius: 50%;  
+    font-size: 20px;  
+    cursor: pointer;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px; 
+}
+
+#ai-submit-button i {
+    color: white;  
+}
+
+#ai-submit-button:hover {
+    background-color: #4bb3b0;  
+}
+
+/* Global Styles Reset for White Box */
+.white-box {
+    font-family: 'Poppins'; 
+    font-size: 12px;                    
+    background-color: #ffffff;
+    padding: 20px;
+    border: 3px solid #5ce1e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 665px;
+    max-height: 400px;
+    margin-left: --5px;
+    overflow-y: auto;
+	margin-top: 20px;
+}
+
+/* Style for headings (inside the white box) */
+.white-box h2 {
+    font-family: 'Poppins'; 
+    font-size: 20px;
+}
+
+/* Style for paragraph text in the white box */
+.white-box p {
+    font-family: 'Poppins'; 
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.white-box ul {
+    font-size: 16px; 
+    font-family: 'Poppins';
+	font-weight: normal; 
+}
+
+.white-box ul li {
+    font-size: 16px; 
+	font-family: 'Poppins';
+	font-weight: normal;
+}
+
+/* Tab Buttons Styling */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background-color: transparent;
+    font-family: 'Poppins'; 
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+}
+
+.tab-btn.active {
+    font-family: 'Poppins'; 
+    color: #5ce1e6;
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #5ce1e6, #fddf59, #fc8cd0);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tab-btn:hover::after, .tab-btn.active::after {
+    opacity: 1;
+}
+
+/* Tab Content Styling */
+.tab-content .tab-panel {
+    display: none;
+}
+
+.tab-content .tab-panel:first-child {
+    display: block;
+}
+
+/* Style for the "Go Back" button */
+.go-back {
+    font-size: 14px;
+    background-color: #5ce1e6;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Horizontal  Styling*/
+.white-box hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 5px 0;
+    width: 121.5%; 
+	margin-left: -120px;
+}
+
+
+
+/* Subject Container */
+#subject-container {
+    background-color: #fff6f1;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;  
+    padding-right: 10px;  
+    margin-top: -9px; 
+}
+
+/* Subject cards styling */
+.subject-card {
+    font-family: 'Poppins';
+    background-color: #ffffff;
+    padding: 15px;                   
+    border: 3px solid #5ce1e6;        
+    border-radius: 8px;               
+    margin-bottom: 5px;             
+    width: 100%;                     
+    text-align: center;               
+}
+
+/* Styling for subject details inside each card */
+.subject-card h3 {
+    font-size: 18px;                  
+    margin: 5px 0;
+    margin-top: 0;
+}
+
+.subject-card p {
+    margin: 5px 0;
+    font-size: 14px;                  
+}
+
+.subject-card .see-more {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.nav a {
+    text-decoration: none; 
+    position: relative;
+    transition: all 0.3s ease;  
+}
+
+/* Underline effect for the current link */
+.nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;  
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #5ce1e6, #fddf59, #fc8cd0);
+}
+
+/* Optional: Hover effect for the other links */
+.nav a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #5ce1e6, #fddf59, #fc8cd0);
+}
+
+.filters select {
+	font-family: 'Poppins';
+    text-align: left; /* Align text inside the dropdown */
+    direction: ltr;   /* Ensure the text is left-to-right */
+    text-align-last: left; /* Align the selected option text to the left */
+	background-color: transparent; /* Make the background of the dropdown transparent */
+}
+
+.salary-filter {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.salary-filter input {
+    width: 100px;
+    padding: 5px;
+    font-size: 14px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+	<div class="nav">
+		<a class="active" href="#home" id="home-link">Home</a>
+		<a href="#subjects" id="subjects-link">Explore subjects</a>
+	</div>
+
+    <hr class="inlineHr hr1" />
+    <hr class="inlineHr hr2" />
+    <img src="logo.png" alt="Logo" id="logo">
+    <img src="banner.png" alt="Logo" id="banner">
+    <img src="manwithBoard.png" alt="Man holding board" id="manWithBoard">
+    <img src="background.png" alt="Background details" id="backgroundDetails">
+    <hr class="inlineHr1 hr3" />
+    <p id="askAI-text" class="askAI-text">Ask AI</p>
+    <img src="askAI.png" alt="Ask AI" id="askAI">
+    
+    <!-- Main cection -->
+    <div class="content-wrapper">
+        <!-- Left side content -->
+        <main class="main-content">
+            <div class="intro" id="intro">
+                <h1>Discover the “Why” Behind what you Learn!</h1>
+                <p>Have you ever found yourself asking these two questions:</p>
+                <ul>
+                    <li>Why am I learning this?</li>
+                    <li>When will I ever use this?</li>
+                </ul>
+                <p>
+                    At STEMspec, we’re here to provide the answers. Our mission is to guide and support students
+                    in bridging the gap between classroom learning and real-world applications. With in-depth
+                    insights and career suggestions that go beyond what other websites offer, we’re dedicated to
+                    helping you build a successful future.
+                </p>
+            </div>
+
+		<!-- Right side content -->
+		<section class="job-search">
+			<div class="search-bar">
+				<input type="text" class="search-input" placeholder="Search job">
+				<div class="filters">
+					<select>
+						<option>Subject</option>
+					</select>
+					<select id="salary-filter">
+						<option value="25000">£25k</option>
+						<option value="30000">£30k</option>
+						<option value="35000">£35k</option>
+						<option value="40000">£40k</option>
+						<option value="50000">£50k+</option>
+					</select>
+				</div>
+				<button class="find-jobs-btn">Find jobs</button>
+			</div>
+
+			<div class="job-listing">
+				<!-- Job cards will be generated here -->
+			</div>
+			<!-- Right Content: Subject List -->
+			<aside class="subject-container" id="subject-container" style="display: none;">
+				<!-- subject cards will be generated here -->
+			</aside>
+		</section>
+        </main>
+
+
+    </div>
+
+    <!-- Decorative vertical lines -->
+    <div id="verticle-line1"></div>
+    <div id="verticle-line2"></div>
+    <div id="verticle-line3"></div>
+
+    <!-- JavaScript requirements -->
+    <script src="jobSearch.js"></script>
+    <script src="exploreSubjects.js"></script>
+    <script src="aiJava.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
